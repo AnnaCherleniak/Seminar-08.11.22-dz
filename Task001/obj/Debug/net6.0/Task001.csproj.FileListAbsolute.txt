@@ -1,0 +1,16 @@
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\obj\Debug\net6.0\Task001.GlobalUsings.g.cs
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\obj\Debug\net6.0\Task001.csproj.AssemblyReference.cache
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\obj\Debug\net6.0\Task001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\obj\Debug\net6.0\Task001.AssemblyInfoInputs.cache
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\obj\Debug\net6.0\Task001.AssemblyInfo.cs
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\obj\Debug\net6.0\Task001.csproj.CoreCompileInputs.cache
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\bin\Debug\net6.0\Task001.exe
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\bin\Debug\net6.0\Task001.deps.json
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\bin\Debug\net6.0\Task001.runtimeconfig.json
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\bin\Debug\net6.0\Task001.dll
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\bin\Debug\net6.0\ref\Task001.dll
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\bin\Debug\net6.0\Task001.pdb
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\obj\Debug\net6.0\Task001.dll
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\obj\Debug\net6.0\ref\Task001.dll
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\obj\Debug\net6.0\Task001.pdb
+C:\Users\Анна\Documents\ДЗ-Семинар-8\Seminar-08.11.22-dz\Task001\obj\Debug\net6.0\Task001.genruntimeconfig.cache
