@@ -22,16 +22,42 @@ int ReadIntegerMessage(string message)
     Console.Write(message);
     return int.Parse(Console.ReadLine() ?? "0");
 }
+int[,] ProductMatrix(int[,] matrix1, int[,] matrix2)
+{
+    int[,] product = new int[matrix1.GetLength(0), matrix2.GetLength(1)];
+    for(int k = 0; k < matrix2.GetLength(1); k++)
+    {
+        for(int i = 0; i < matrix1.GetLength(0); i++)
+        {
+            int p = 0;
+            for(int j = 0; j < matrix1.GetLength(1); j++)
+                p = p + matrix1[i, j] * matrix2[j, k];
+            product[i, k] = p;
+        }
+    }
+    return product;
+}
 
 
-int rows = ReadIntegerMessage("Введите количество строк в матрице: ");
-int columns = ReadIntegerMessage("Введите количество столбцов в матрице: ");
-int min = ReadIntegerMessage("Введите начало диапазона чисел матрицы: ");
-int max = ReadIntegerMessage("Введите конец диапазона чисел матрицы: ");
-int[,] first = CreateMatrix(rows, columns, min, max);
-int[,] second = CreateMatrix(rows, columns, min, max);
-int[,] product = new int[rows, columns];
+int rows1 = ReadIntegerMessage("Введите количество строк в первой матрице: ");
+int columns1 = ReadIntegerMessage("Введите количество столбцов в первой матрице: ");
+int rows2 = ReadIntegerMessage("Введите количество строк во второй матрице: ");
+int columns2 = ReadIntegerMessage("Введите количество столбцов во второй матрице: ");
+int min = ReadIntegerMessage("Введите начало диапазона чисел матриц: ");
+int max = ReadIntegerMessage("Введите конец диапазона чисел матриц: ");
+int[,] first = CreateMatrix(rows1, columns1, min, max);
+int[,] second = CreateMatrix(rows2, columns2, min, max);
 Console.WriteLine("Первая матрица: ");
 PrintMatrix(first);
 Console.WriteLine("Вторая матрица: ");
 PrintMatrix(second);
+if(columns1 == rows2)
+{
+    int[,] product = ProductMatrix(first, second);
+    Console.WriteLine("Произведение матриц: ");
+    PrintMatrix(product);
+}
+else
+{
+    Console.WriteLine("Такие матрицы невозможно умножить, количество столбцов первой не равняется количеству строк второй");
+}
