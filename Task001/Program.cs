@@ -38,7 +38,6 @@ int[,] ProductMatrix(int[,] matrix1, int[,] matrix2)
     return product;
 }
 
-
 int rows1 = ReadIntegerMessage("Введите количество строк в первой матрице: ");
 int columns1 = ReadIntegerMessage("Введите количество столбцов в первой матрице: ");
 int rows2 = ReadIntegerMessage("Введите количество строк во второй матрице: ");
