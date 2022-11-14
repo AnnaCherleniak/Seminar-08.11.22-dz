@@ -1,13 +1,14 @@
 ﻿// Показать треугольник Паскаля *Сделать вывод в виде равнобедренного треугольника
-void PrintMatrix(int[,] matrix)
+/*void PrintMatrix(int[,] matrix)
 {
     for(int i = 0; i < matrix.GetLength(0); i++)
     {
         for(int j = 0; j < matrix.GetLength(1); j++)
-            Console.Write($"{matrix[i, j], -5} ");
+            if(matrix[i, j] != 0)
+                Console.Write($"{matrix[i, j], -5} ");
         Console.WriteLine();
     }
-}
+}*/
 void Pascal(int[,] matrix)
 {
     for(int i = 0; i < matrix.GetLength(0); i++)
@@ -27,27 +28,25 @@ void Pascal(int[,] matrix)
         //}
     //}
 }
-void Magic(int cellWidth)
-{
-    int row = matrix.GetLength(0);
-    int col = cellWidth * row;
-    for(int i = 0; i < row; i ++)
-    {
-        for(int j = 0; j <= i; j++)
-        {
-            Console.SetCursorPosition(col, i +1);
-            if(matrix[i, j] != 0) Console.Write($"{matrix[i, j], cellWidth}");
-            col += cellWidth * 2;
-        }
-        col = cellWidth * row - cellWidth*(i + 1);
-        Console.WriteLine();
-    }
-}
-Console.WriteLine("Введите количество строк в треугольнике Паскаля: ");
-int rows = int.Parse(Console.ReadLine() ?? "0");
+//Console.WriteLine("Введите количество строк в треугольнике Паскаля: ");
+//int rows = int.Parse(Console.ReadLine() ?? "0");
+int rows = 9;
 int[,] matrix = new int[rows, rows];
 Pascal(matrix);
 Console.WriteLine("Треугольник Паскаля: ");
 //PrintMatrix(matrix);
 int cellWidth = 5;
-Magic(cellWidth);
+int col = cellWidth * rows;
+for(int i = 0; i < rows; i ++)
+{
+    for(int j = 0; j <= i; j++)
+    {
+        Console.SetCursorPosition(col, i + 1);
+        if(matrix[i, j] != 0)
+            Console.Write($"{matrix[i, j], -5}");
+        col += cellWidth * 2;
+    }
+    col = cellWidth * rows - cellWidth * (i + 1);
+    Console.WriteLine();
+}
+
