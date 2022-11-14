@@ -18,6 +18,10 @@ void PrintMatrix(int[,,] matrix)
             for(int k = 0; k < matrix.GetLength(2); k++)
                 Console.WriteLine($"{i},{j},{k} = {matrix[i, j, k]}");    
 }
-
-int[,,] matrix = CreateMatrix(3, 3, 3, 10, 20);
+Console.WriteLine("Введите начало диапазона чисел массива:");
+int min = int.Parse(Console.ReadLine() ?? "0");
+Console.WriteLine("Введите конец диапазона чисел массива:");
+int max = int.Parse(Console.ReadLine() ?? "0");
+int[,,] matrix = CreateMatrix(3, 3, 3, min, max);
+Console.WriteLine("Элементы трехмерного массива: ");
 PrintMatrix(matrix);
