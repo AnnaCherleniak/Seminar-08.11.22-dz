@@ -30,12 +30,12 @@ void Pascal(int[,] matrix)
 }
 //Console.WriteLine("Введите количество строк в треугольнике Паскаля: ");
 //int rows = int.Parse(Console.ReadLine() ?? "0");
-int rows = 9;
+int rows = 8;
 int[,] matrix = new int[rows, rows];
 Pascal(matrix);
 Console.WriteLine("Треугольник Паскаля: ");
 //PrintMatrix(matrix);
-int cellWidth = 5;
+int cellWidth = 3;
 int col = cellWidth * rows;
 for(int i = 0; i < rows; i ++)
 {
@@ -43,7 +43,7 @@ for(int i = 0; i < rows; i ++)
     {
         Console.SetCursorPosition(col, i + 1);
         if(matrix[i, j] != 0)
-            Console.Write($"{matrix[i, j], -5}");
+            Console.Write($"{matrix[i, j], -2}");
         col += cellWidth * 2;
     }
     col = cellWidth * rows - cellWidth * (i + 1);
